@@ -169,7 +169,7 @@ def plot_iv_smile(df, S):
     df_nse_call = df[df['IV_Call'].notna()].copy()
     df_nse_put  = df[df['IV_Put'].notna()].copy()
 
-    # REPLACE the old filter lines with these ↓
+    # REPLACE the old filter lines with these
     df_nse_call = df_nse_call[
         (df_nse_call.index >= S * 0.90) &
         (df_nse_call.index <= S * 1.10)
